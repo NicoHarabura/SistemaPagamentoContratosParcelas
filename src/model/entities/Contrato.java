@@ -9,12 +9,8 @@ public class Contrato {
 	private Integer numero;
 	private Date data;
 	private Double valor;
-	
+
 	private List<Parcela> parcelas = new ArrayList<>();
-	
-	public Contrato() {
-		
-	}
 
 	public Contrato(Integer numero, Date data, Double valor) {
 		this.numero = numero;
@@ -50,14 +46,12 @@ public class Contrato {
 		return parcelas;
 	}
 
-	public void setParcelas(List<Parcela> parcelas) {
-		this.parcelas = parcelas;
-	}
-	
-	public void addParcela (Parcela parcela) {
+	public void addParcela(Parcela parcela) {
 		parcelas.add(parcela);
 	}
-	
-	
-	
+
+	public void removeParcela(Parcela parcela) {
+		parcelas.remove(parcela);
+	}
+
 }

@@ -8,7 +8,6 @@ import java.util.Scanner;
 import model.entities.Contrato;
 import model.entities.Parcela;
 import model.services.ServicoContratos;
-import model.services.ServicoPagamentoOnline;
 import model.services.ServicoPayPal;
 
 public class Program {
@@ -35,21 +34,8 @@ public class Program {
 		
 		System.out.println("Parcelas: ");
 		for (Parcela p : contrato.getParcelas()){
-			System.out.println(sdf.format(p.getDataVencimento()) + " - " + p.getValor());
+			System.out.println(p);
 		}
-		
-		
-		/*Enter contract data
-		Number: 8028
-		Date (dd/MM/yyyy): 25/06/2018
-		Contract value: 600.00
-		Enter number of installments: 3
-		Installments:
-		25/07/2018 - 206.04
-		25/08/2018 - 208.08
-		25/09/2018 - 210.12*/
-		
-		
 		
 		sc.close();
 		

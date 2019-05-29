@@ -2,8 +2,8 @@ package model.services;
 
 public interface ServicoPagamentoOnline {
 
-	public double taxaPagamento(double valor);
+	double taxaPagamento(double valor);
 
-	public double juros(double valor, int mes);
+	double juros(double valor, int mes);
 
 }
